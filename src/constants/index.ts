@@ -17,21 +17,21 @@ import {
   html,
   css,
   reactjs,
-  redux,
+  python,
   tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
+  genfura,
+  infosys,
+  sit_logo,
   jobit,
   tripguide,
   threejs,
+  vite,
+  nextjs,
+  sql,
+  resume_reviewer_img
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -51,36 +51,24 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Web Developer",
+    title: "Frontend Development",
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
+    title: "Backend Development",
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
-  },
-  {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
+    title: "React Development",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "NextJs Development",
+    icon: creator,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Vite Development",
+    icon: vite,
   },
 ];
 
@@ -102,12 +90,16 @@ const technologies: TTechnology[] = [
     icon: typescript,
   },
   {
+    name: "Python",
+    icon: python,
+  },
+  {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Next JS",
+    icon: nextjs,
   },
   {
     name: "Tailwind CSS",
@@ -116,6 +108,10 @@ const technologies: TTechnology[] = [
   {
     name: "Node JS",
     icon: nodejs,
+  },
+  {
+    name: "Sql",
+    icon: sql,
   },
   {
     name: "MongoDB",
@@ -129,67 +125,45 @@ const technologies: TTechnology[] = [
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
+    title: "Artifical Intelligence",
+    companyName: "Infosys",
+    icon: infosys,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jun 2023 - Dec 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Completed a comprehensive Artificial Intelligence (AI) course covering core concepts such as machine learning, deep learning, and neural networks.",
+      "Gained practical knowledge in data preprocessing, model training, and evaluation techniques for real-world AI applications.",
+      "Developed strong understanding of AI algorithms, supervised & unsupervised learning, and performance optimization strategies.",
     ],
   },
   {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
+    title: "Minor Degree in Artificial Intelligence and Data Science",
+    companyName: "Sethu Institute of Technology",
+    icon: sit_logo,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Mar 2022 - Mar 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Completed a Minor Degree in Artificial Intelligence and Data Science (AIDS) along with main degree",
+      "Acquired knowledge in machine learning, data analytics, and AI fundamentals.",
+      "Applied AI and data-driven approaches to support engineering analysis and decision-making.",
+      "Built interdisciplinary skills bridging core engineering principles with modern AI technologies.",
     ],
   },
   {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
+    title: "Junior Developer Intern",
+    companyName: "Genfura",
+    icon: genfura,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Jun 2025 - Jan 2026",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Completed internship as a Junior Developer Intern at Genfura Technologies, working on live development tasks and client requirements.",
+      "Developed responsive UI components and application pages using React.js / Next.js.",
+      "Assisted in bug fixing, testing, and improving performance of web applications.",
+      "Collaborated with the team using version control tools (Git) and followed professional development workflows.",
     ],
   },
 ];
@@ -223,25 +197,21 @@ const testimonials: TTestimonial[] = [
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "AI Resume Reviewer",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Developed an AI Resume Reviewer that analyzes resumes and provides automated feedback on formatting, skills, and ATS compatibility to improve candidate success rates.",
     tags: [
       {
-        name: "react",
+        name: "streamlit",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "python",
         color: "green-text-gradient",
       },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
     ],
-    image: carrent,
-    sourceCodeLink: "https://github.com/",
+    image: resume_reviewer_img,
+    sourceCodeLink: "https://github.com/guru-212002/python-resume-reviewer",
   },
   {
     name: "Job IT",

@@ -1,8 +1,9 @@
-import logo from "./portfolio_logo.webp";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
+import logo from "./g_logo_new.png";
+import backend from "./rest_api_backend_dev.webp";
+import creator from "./next_dev.webp";
+import mobile from "./react_dev.webp";
+import web from "./javascript_dev.webp";
+import vite from "./vite_dev.webp";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -20,15 +21,18 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import python from "./tech/python_img.webp";
+import nextjs from "./tech/next_js_logo.webp";
+import sql from "./tech/sql_logo.webp";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import genfura from "./company/genfura_logo.webp";
+import sit_logo from "./company/sit_logo.webp";
+import guvi from "./company/guvi_logo.webp";
+import infosys from "./company/infosys_logo.webp";
 
-import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import resume_reviewer_img from "./ai_resume_reviewer.webp";
 
 export {
   logo,
@@ -52,11 +56,15 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
+  genfura,
+  sit_logo,
+  guvi,
+  infosys,
   jobit,
   tripguide,
+  vite,
+  python,
+  nextjs,
+  sql,
+  resume_reviewer_img
 };

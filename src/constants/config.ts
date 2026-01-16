@@ -16,23 +16,36 @@ type TConfig = {
   };
   contact: {
     form: {
-      name: {
-        span: string;
-        placeholder: string;
+      phone: {
+        label: string;
+        link: string;
+        text: string;
+        download?: boolean;
       };
       email: {
-        span: string;
-        placeholder: string;
+        label: string;
+        link: string;
+        text: string;
+        download?: boolean;
       };
-      message: {
-        span: string;
-        placeholder: string;
+      linkedin: {
+        label: string;
+        link: string;
+        text: string;
+        download?: boolean;
+      }
+      resume: {
+        label: string;
+        link: string;
+        text: string;
+        download?: boolean;
       };
     };
   } & TSection;
   sections: {
     about: Required<TSection>;
     experience: TSection;
+    tech_stacks: TSection;
     feedbacks: TSection;
     works: Required<TSection>;
   };
@@ -46,20 +59,32 @@ export const config: TConfig = {
   },
   hero: {
     name: "Guru moorthi",
-    p: ["Software Developer"],
+    p: ["Software Developer", "Writing clean, maintainable code to solve real-world problems.Committed to optimization, performance, and technical excellence."],
   },
   contact: {
     p: "Get in touch",
     h2: "Contact.",
     form: {
-      name: {
-        span: "Your Name",
-        placeholder: "What's your name?",
+      phone: {
+        label: "Contact Number :",
+        link: "tel:+919787310867",
+        text: "+91 97873 10867",
       },
-      email: { span: "Your Email", placeholder: "What's your email?" },
-      message: {
-        span: "Your Message",
-        placeholder: "What do you want to say?",
+      email: {
+        label: "Email :",
+        link: "mailto:gurumoorthi.tech@gmail.com",
+        text: "gurumoorthi.tech@gmail.com",
+      },
+      linkedin: {
+        label: "LinkedIn :",
+        link: "https://www.linkedin.com/in/guru-moorthi-guru21m",
+        text: "Profile Link",
+      },
+      resume: {
+        label: "Resume :",
+        link: "/resume/guru_moorthi_resume.pdf",
+        text: "Download Resume",
+        download: true,
       },
     },
   },
@@ -75,7 +100,11 @@ export const config: TConfig = {
     },
     experience: {
       p: "What I have done so far",
-      h2: "Work Experience.",
+      h2: "Certifications & Work Experience.",
+    },
+    tech_stacks: {
+      p: "Stacks I Worked on",
+      h2: "Tech Stacks."
     },
     feedbacks: {
       p: "What others say",

@@ -54,8 +54,10 @@ const About = () => {
             disableOnInteraction: false,
           }}
           breakpoints={{
+            0: { slidesPerView: 1 },
             640: { slidesPerView: 2 },
-            1024: { slidesPerView: 4 },
+            1024: { slidesPerView: 3 },
+            1440: { slidesPerView: 4 },
           }}
           modules={[Autoplay]}
         >
