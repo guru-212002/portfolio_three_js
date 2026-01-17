@@ -30,9 +30,10 @@ import sit_logo from "./company/sit_logo.webp";
 import guvi from "./company/guvi_logo.webp";
 import infosys from "./company/infosys_logo.webp";
 
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import image_recognition from "./image_recognition.webp";
+import chat_app from "./python_chat_app.webp";
 import resume_reviewer_img from "./ai_resume_reviewer.webp";
+import crud_app from "./crud_app.webp"
 
 export {
   logo,
@@ -60,11 +61,12 @@ export {
   sit_logo,
   guvi,
   infosys,
-  jobit,
-  tripguide,
+  image_recognition,
+  chat_app,
   vite,
   python,
   nextjs,
   sql,
-  resume_reviewer_img
+  resume_reviewer_img,
+  crud_app
 };

@@ -25,13 +25,14 @@ import {
   genfura,
   infosys,
   sit_logo,
-  jobit,
-  tripguide,
+  image_recognition,
+  chat_app,
   threejs,
   vite,
   nextjs,
   sql,
-  resume_reviewer_img
+  resume_reviewer_img,
+  crud_app
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -214,46 +215,67 @@ const projects: TProject[] = [
     sourceCodeLink: "https://github.com/guru-212002/python-resume-reviewer",
   },
   {
-    name: "Job IT",
+    name: "Image Recognition",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Built an Image Recognition Application using TensorFlow to classify and identify objects from images with high accuracy using deep learning models.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "streamlit",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tensorflow",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: image_recognition,
+    sourceCodeLink: "https://github.com/guru-212002/py-image-classifier",
+  },
+  {
+    name: "Chat App",
+    description:
+      "Developed a real-time Python chat application using Socket.IO to enable instant messaging with low-latency communication between multiple users.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "socket-io",
+        color: "green-text-gradient",
+      },
+      {
+        name: "html",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: chat_app,
+    sourceCodeLink: "https://github.com/guru-212002/py-chat-app",
+  },
+  {
+    name: "CRUD App",
+    description:
+      "Developed a full-stack CRUD web application using Vite (frontend) and Express.js (backend) with MongoDB for efficient data storage and management.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "express",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "mongodb",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    sourceCodeLink: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    image: crud_app,
+    sourceCodeLink: "https://github.com/guru-212002/react-app-1",
   },
 ];
 

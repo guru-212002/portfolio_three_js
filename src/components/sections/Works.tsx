@@ -18,7 +18,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
   sourceCodeLink,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} onClick={() => window.open(sourceCodeLink, "_blank")} className="cursor-pointer">
       <Tilt
         tiltEnable
         tiltMaxAngleX={20}
@@ -33,8 +33,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
             />
             <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
               <div
-                onClick={() => window.open(sourceCodeLink, "_blank")}
-                className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
+                className="black-gradient flex h-10 w-10 items-center justify-center rounded-full"
               >
                 <img
                   src={github}
@@ -75,7 +74,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex flex-wrap gap-7 justify-center">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

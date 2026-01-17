@@ -1,10 +1,10 @@
 // import React, { useState, useRef } from "react";
 // import emailjs from "@emailjs/browser";
-
 import { EarthCanvas } from "../canvas";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
 import { styles } from "../../constants/styles";
+import { SectionWrapper } from "../../hoc";
 // import { Link } from "react-router-dom";
 
 // const INITIAL_STATE = Object.fromEntries(
@@ -69,7 +69,7 @@ const Contact = () => {
       className={`flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 ${styles.padding} relative z-0 mx-auto max-w-7xl`}
     >
       <div
-        className="bg-black-100 rounded-2xl p-8 w-full flex flex-col items-center"
+        className="bg-black-100 rounded-2xl p-8 w-full flex flex-col items-center" id="contact"
       >
         <Header useMotion={false} {...config.contact} />
 
