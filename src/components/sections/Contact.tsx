@@ -4,7 +4,6 @@ import { EarthCanvas } from "../canvas";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
 import { styles } from "../../constants/styles";
-import { SectionWrapper } from "../../hoc";
 // import { Link } from "react-router-dom";
 
 // const INITIAL_STATE = Object.fromEntries(
